@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./form.css" />
+    <title>Form validation</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form action="#" id="loginform">
+        <div class="form-field">
+          <label for="loginUsername">User Name</label>
+          <input type="text" id="loginUserName" placeholder="Enter User Name" />
+          <small class="alert-message">Error</small>
+        </div>
+        <div class="form-field">
+          <label for="loginPassword">Password</label>
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter Password"
+          />
+          <small class="alert-message">Error</small>
+        </div>
+        <div class="form-field">
+          <i class="fa fa-eye" aria-hidden="true"></i>
+          <label>Show/hide Password</label>
+        </div>
+        <button class="btn" type="submit">go</button>
+      </form>
+
+      <div class="reset-password">
+        <small><a href="#">Forget User Name or Password</a></small>
+      </div>
+      <form action="#" class="form-request">
+        <div class="form-field">
+          <label for="requestEmail">Email</label>
+          <input
+            type="email"
+            name=""
+            id="requestEmail"
+            placeholder="Enter Your Email"
+          />
+          <small class="alert-message">Error</small>
+        </div>
+        <button class="btn red" type="submit">Request</button>
+      </form>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>
